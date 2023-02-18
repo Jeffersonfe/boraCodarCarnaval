@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Toda fonte da pagina fica em 10px */
+:root {
+    font-size: 62.5%;
+}
+
+/* Deixa todo documento com a font padrão de 16px faz usar rem no lugar de px */
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main{
+    width: 100%;
+    height: 50rem;
+    background: #F8F8FF;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+#bgOne {
+    display: flex;
+    position: absolute;
+    max-width: 40rem;
+    max-height: 35rem;
+    top: 0;
+    left: 0;
+}
+#bgTwo {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#find{
+    color: #E45858;
+    font-size: 1.6rem;
+}
+h1 {
+    margin: 4rem 0;
+    font-weight: bold;
+    font-size: 4.8rem;
+    color: #121214;
+}
+
+h1 span{
+    color: #6246EA;
+}
+.container{
+    min-width: fit-content;
+    height: 12.8rem;
+    background-color: white;
+    z-index: 3;
+    padding: 4rem;
+    border: .1rem solid #EAEAEA;
+    border-radius: .5rem;
+    display: flex;
+}
+.container input{
+    width: 34.8rem;
+    height: 4.8rem;
+    outline: none;
+    font-size: 1.6rem;
+    background-color: #F4F4FF;
+    border-radius: .5rem;
+    border: .1rem solid #EAEAEA;
+    margin-right: 2.4rem;
+    padding: 0 5rem;
+    color: #7C7C8A;
+}
+.container button{
+    width: 16.9rem;
+    height: 4.8rem;
+    background-color: #6246EA;
+    border-radius: .5rem;
+    color: white;
+    border: none;  
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: #7C7C8A;
+}
+
+
+
+
+.selectCity{
+    position: relative;
+
+}
+
+.selectCity #mapa{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem 2rem;
+}
+.selectCity #sand{
+    position: absolute;
+    top: 1rem;
+    left: 31.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+
+.menu{
+    width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem auto 4rem auto;
+}
+#btnMenu{
+    border: .1rem solid #EAEAEA;
+    padding: .8rem;
+    border-radius: .5rem;
+}
+h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+#list, #map{
+    width: 8.6rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#list{
+    background-color: #6246EA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#map{
+    background: none;
+    color: #6246EA;
+    border: none;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: 38.4rem 38.4rem 38.4rem;
+    width: 120rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    gap: 2.4rem
+}
+#cidade{
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    place-content: center;
+}
+.card{
+    width: 38.4rem;
+    border: .2rem solid #EAEAEA;
+    border-radius: .5rem;
+    margin-bottom: 1.6rem;
+}
+.card:hover{
+    border: 2px solid #6246EA;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3, .card p, .card span{
+    padding: 1.6rem;
+}
+
+.card span{
+    display: inline-block;
+}
+
+#icon{
+    margin-left: 1.6rem;
+    margin-top: 1rem;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+
+
+
